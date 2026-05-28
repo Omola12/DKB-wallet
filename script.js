@@ -6,14 +6,14 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const password = document.getElementById('password').value;
     
     // Hardcoded credentials check
-    if (email === 'highrevinkevin3@gmail.co' && password === '#Highkevin@109') {
+    if (email === 'highrevinkevin3@gmail.com' && password === '#Highkevin@109') {
         // Store login state
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('userEmail', email);
         // Redirect to dashboard
         window.location.href = 'dashboard.html';
     } else {
-        alert('Invalid credentials. Please use the demo account shown below.');
+        alert('Invalid credentials.');
     }
 });
 
