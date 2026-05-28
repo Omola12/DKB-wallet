@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKB Wallet - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2>DKB<span>Wallet</span></h2>
+            </div>
+            <div class="demo-badge-nav">🔧 DEMO SIMULATION</div>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </nav>
+        
+        <div class="dashboard-content">
+            <div class="welcome-section">
+                <h3>Welcome back, <span id="userEmail">highrevinkevin3@gmail.co</span></h3>
+                <p class="disclaimer">⚠️ This is a demo interface for design purposes only</p>
+            </div>
+            
+            <div class="balance-card">
+                <div class="balance-header">
+                    <p>Total Balance</p>
+                    <span class="currency-icon">💰</span>
+                </div>
+                <div class="balance-amount">£712,236</div>
+                <div class="frozen-notification" id="frozenNotification">
+                    ⚠️ Funds are frozen due to inactivity kindly pay a token of £150 to unfreeze the funds
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="sendBtn" class="action-btn send-btn">Send</button>
+                <button id="withdrawBtn" class="action-btn withdraw-btn">Withdraw</button>
+            </div>
+            
+            <div id="messagePopup" class="message-popup" style="display: none;">
+                <div class="popup-content">
+                    <p>⚠️ Funds are frozen due to inactivity kindly pay a token of £150 to unfreeze the funds</p>
+                    <button onclick="closePopup()">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
