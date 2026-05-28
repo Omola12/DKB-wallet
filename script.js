@@ -13,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         // Redirect to dashboard
         window.location.href = 'dashboard.html';
     } else {
-        alert('Invalid credentials. Please use the provided demo account.');
+        alert('Invalid credentials. Please use the demo account shown below.');
     }
 });
 
